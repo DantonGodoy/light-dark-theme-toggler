@@ -1,5 +1,5 @@
 {
-  "name": "webpack4-boilerplate",
+  "name": "light-dark-theme-toggler",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot --config webpack.config.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Danton de Godoy Petri Lima",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.8.4",
