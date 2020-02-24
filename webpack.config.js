@@ -5,6 +5,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 module.exports = {
+  stats: {
+    // Hides HTML entrypoint undefined warning message.
+    children: false
+  },
   plugins: [
     // Clean up the dist folder before each new build.
     new CleanWebpackPlugin(),

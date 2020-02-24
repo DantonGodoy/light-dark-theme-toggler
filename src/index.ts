@@ -1,23 +1,11 @@
-import styles from './app.module';
-import './global';
-import Ryu from './images/ryu-wallpaper';
+// import Ryu from './images/ryu-wallpaper';
+import './styles';
 
-interface User {
-  id: number
-  username: string
-  firstName: string
-  lastName: string
-}
+const toggleBtn = document.querySelector('.theme-toggle-button'),
+      sunMoonContainer = document.querySelector('.sun-moon-container');
 
-const newUser: User = {
-  id: 123,
-  username: 'jpreecedev',
-  firstName: 'Jon',
-  lastName: 'Preece'
-}
-
-const imagem = document.createElement('img');
-imagem.src = Ryu;
-document.body.appendChild(imagem);
-
-console.log(newUser)
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  const currentRotation = parseInt(getComputedStyle(sunMoonContainer).getPropertyValue('--rotation'))
+  sunMoonContainer.style.setProperty('--rotation', currentRotation + 180)
+});
