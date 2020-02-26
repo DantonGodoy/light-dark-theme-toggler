@@ -15,4 +15,24 @@ footer {
     transform: translateY(4px);
     fill: #ff0000;
   }
+
+  & .author-site {
+    margin-top: 16px;
+  }
+
+  & #currentYear {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &::before {
+      content: '';
+      height: 2px;
+      width: 160px;
+      background-color: var(--text-color);
+      border-radius: 50%;
+      margin-bottom: 8px;
+    }
+  }
 }

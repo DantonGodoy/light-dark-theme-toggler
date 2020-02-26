@@ -1,5 +1,6 @@
 header {
   @include full-width;
+  @include display-center-justified-between;
 
   padding: .5rem 1rem;
 
@@ -7,5 +8,7 @@ header {
 
   & .header-container {
     @include display-center-justified-between;
+
+    width: 100%;
   }
 }
